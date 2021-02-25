@@ -1,0 +1,436 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+  border-collapse: collapse;
+}
+dl, ul, ol, menu, li {
+    list-style: none;
+}
+html, body{
+  line-height: 1;
+  overflow: auto;
+}
+
+header{
+  border-bottom: 1px solid #d9d9d9;
+  z-index: 9999;
+  display: flex;
+  height: 74px;
+}
+
+header > h1{
+  position: relative;
+  width: 15%;
+  background: #e60012;
+  text-align: center;
+  z-index: 9999;
+}
+
+header h1 a {
+    display: block;
+    height: 74px;
+    background: url(https://www.nintendo.co.kr/images/renew/common/logo_nintendo_red.gif) no-repeat center center;
+    font-size: 0;
+}
+
+header nav{
+  height: 100%;
+  z-index: 9999;
+  width: calc(85% - 141px - 75px);
+}
+header nav ul li{
+  border: 0.3px solid #d9d9d9;
+  display: inline-block;
+  height: 100%;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  color: #111;
+  line-height: 72px;
+  width: 20%;
+}
+
+a[class="download"]{
+  width: 141px;
+  height: 100%;
+  border-left: 1px solid #d9d9d9;
+  background: #fe7c0a url(https://www.nintendo.co.kr/images/renew/common/btn_head_eshop.gif) no-repeat center center;
+  text-indent: 0;
+  font-size: 0;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.btn_search {
+    width: 75px;
+    height: 100%;
+    border-left: 1px solid #d9d9d9;
+    background: #fff;
+    font-size: 0;
+    text-indent: -9999px;
+    z-index: 9999;
+    position: relative;
+}
+.btn_search:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 27px;
+    height: 27px;
+    margin: -13px 0 0 -13px;
+    background: url(https://www.nintendo.co.kr/images/renew/common/search.png) no-repeat left top;
+    text-indent: 0;
+}
+
+.main__image{
+  width: 100%; height: 600px;
+  background-image:url(https://www.nintendo.co.kr/front_images/banner/rolling/62/20ddb692a9e045063ad096f861da468b.jpg);
+  background-size: 100% 100%;
+}
+
+.main__number{
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 50px;
+}
+
+.left_btn{
+  background-size: 100% 0; 
+  width:20px; height: 30px;
+  background-image: url(https://www.nintendo.co.kr/images/renew/main/main_slide_btn.png) no-repeat 0 0;
+}
+.right_bnt{
+  background-size: 200%;
+  width:20px; height: 30px;
+  background-image: url(https://www.nintendo.co.kr/images/renew/main/main_slide_btn.png) no-repeat 0 0;
+}
+
+.news{
+  position: relative;
+  margin: auto;
+  width: 1200px;
+}
+.news > h2 > span{
+    margin-left: 11px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.news__content{
+    width: 1200px;
+  height: 630px;
+    margin: 40px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.news__content > article{
+  width: 276px;
+}
+.news__image > img {
+  width: 100%; height: auto;
+}
+.news__article{
+  font-size: 16px; color:red; margin: 15px 0;
+}
+.news__title{
+   height: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    line-height: 22px;
+}
+.news__date{
+  
+    font-size: 13px;
+    color: #737373;
+}
+
+.gift{
+  display: block;
+  height: 140px;
+  background: #fe7c0a url(https://www.nintendo.co.kr/images/renew/main/main_banner_eshop.gif) no-repeat top center;
+  font-size: 0;
+  margin: 80px 0;
+}
+
+.games{
+  position: relative;
+  margin: auto;
+  width: 1200px;
+}
+.games > h2 > span{
+    margin-left: 11px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+
+.games__titles{
+  width: 1200px;
+  height: 630px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.games__titles > article{
+  width: 276px;
+  position: relative;
+}
+.game__article{
+  color:red; margin: 15px 0;
+}
+.game__article > span:first-child{
+  font-size: 16px; 
+}
+.game__article > span:nth-child(n+2){
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  background: #e60012;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+.game__article > span:nth-child(2){
+  position: relative;
+  left: 105px;
+}
+.game__article > span:nth-child(3){
+  position: relative;
+  left: 115px;
+}
+.ko__lang{
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  width: 60px;
+  height: 36px;
+  text-indent: -9999px;
+  display: block;
+  background: url(https://www.nintendo.co.kr/images/renew/common/ico_lang_foreign_s.png) no-repeat 0 0;
+  background-position: 0 -116px;
+  overflow: hidden;
+}
+
+.banners{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.banners.under{
+  padding: 40px 0 0;
+}
+.banners > div {
+  width: 31.33%;
+  height: 140px;
+}
+
+.store{
+  margin: 80px auto 0;
+}
+
+.pic_list{
+  width: 1200px;
+  margin: 30px auto 20px;
+  border-bottom: 1.5px solid #d6d6d6;
+}
+
+.pic_list > li {
+  display: inline-block;
+  width: 33.33%;
+  height: 120px;
+  border: 1px solid #d6d6d6;
+  border-width: 1px 1px 0;
+  position: relative;
+}
+.pic_list > li:nth-child(1){
+  background: url(https://www.nintendo.co.kr/images/renew/3ds/main/unit_icon.png) no-repeat 17.55% 0;
+}
+.pic_list > li:nth-child(2){
+  background: url(https://www.nintendo.co.kr/images/renew/3ds/main/unit_icon.png) no-repeat 17.55% -119px;
+}
+.pic_list > li:nth-child(3){
+  background: url(https://www.nintendo.co.kr/images/renew/3ds/main/unit_icon.png) no-repeat 17.55% -238px;
+}
+.pic_list > li > span{
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  padding-right: 20px;
+}
+
+.notice{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto 100px;
+  margin-top: 50px;
+  padding: 21px 20px;
+  border: 1px solid #d6d6d6;
+  border-width: 1px 0;
+  overflow: hidden;
+}
+.notice > p{
+  font-size: 16px;
+  color: #737373;
+}
+.navi{
+  display: block;
+  padding: 35px 0;
+  background: #e60012;
+  margin: 80px 0 0;
+}
+.navi__inner{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navi__inner > h1{
+  display: inline-block;
+  width: 190px;
+  height: 29px;
+  background: url(https://www.nintendo.co.kr/images/renew/common/top.png) no-repeat top left;
+  font-size: 0;
+}
+.navi__inner > span{
+  position: absolute;
+  width: 30px; height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  top: 50%;
+  right: 20px;
+  margin-top: -12px;
+  background: url(https://www.nintendo.co.kr/images/renew/common/btn_switch_main_gotoTop.png) no-repeat center;
+}
+
+.inner{
+  margin: 0 auto;
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  justify-content:center;
+}
+.inner__sns{
+  display: inline-block;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.inner__sns > li{
+  width: 60px; height: 60px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  font-size: 0;
+  text-indent: -999999px;
+  margin: 0 10px;
+}
+.inner__sns > li:nth-child(1){
+  background: url(https://www.nintendo.co.kr/images/renew/common/bottom.png) no-repeat 0 -160px;
+}
+.inner__sns > li:nth-child(2){
+  background: url(https://www.nintendo.co.kr/images/renew/common/bottom.png) no-repeat -70px -160px;
+}
+.inner__sns > li:nth-child(3){
+  background: url(https://www.nintendo.co.kr/images/renew/common/bottom.png) no-repeat -140px -160px;
+}
+.inner__btn > span {
+  /*https://www.nintendo.co.kr/images/renew/common/bottom.png*/
+  width: 370px; height: 60px;
+  display: inline-block;
+}
+.inner__btn > span:nth-child(1){
+  background: url(https://www.nintendo.co.kr/images/renew/common/bottom.png) no-repeat;
+}
+.inner__btn > span:nth-child(2){
+  background: url(https://www.nintendo.co.kr/images/renew/common/btn_footer_amiibo.png) no-repeat top left;
+}
+
+.bottom_nav{
+  width: 1200px;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom_nav__tit::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 18px;
+    height: 3px;
+    background: #e60012;
+    transform: translateX(-50%);
+}
+.bottom_nav__tit{
+  font-weight: bold;
+  margin: 0 0 20px;
+  padding: 15px 0 0;
+  position: relative;
+}
+
+.bottom_nav__list > ul > li{
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #737373;
+}
+
+.bottom{
+  padding: 40px 0;
+}
+
+footer{
+  padding: 30px 0;
+  background-color: #F5F5F5;
+}
+.footer__inner{
+  width: 1200px; margin: 0 auto;
+  position: relative;
+}
+
+.footer__inner p {
+  font-size: 14px;
+  letter-spacing: -0.07em;
+  line-height: 100%;
+  color: #737373;
+  margin: 6px 0;
+}
+.footer__right{
+  position: absolute;
+  right:0; top: 0;
+  text-align: right;
+}
+.caution{
+  margin: 0 !important;
+  font-size: 12px !important;
+}
+
+
+/*@media screen and (max-width:1200px){
+  html{
+    display: none;
+  }
+}*/
